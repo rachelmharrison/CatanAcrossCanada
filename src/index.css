@@ -1,0 +1,290 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.hex {
+  float: left;
+  margin-left: 3px;
+  margin-bottom: -26px;
+  position: relative;
+}
+.hex .top {
+  width: 0;
+  border-bottom: 30px solid #6C6;
+  border-left: 52px solid transparent;
+  border-right: 52px solid transparent;
+}
+.hex .middle {
+  width: 104px;
+  height: 60px;
+  background: #6C6;
+}
+.hex .bottom {
+  width: 0;
+  border-top: 30px solid #6C6;
+  border-left: 52px solid transparent;
+  border-right: 52px solid transparent;
+}
+
+.hex.desert .top{
+  border-bottom: 30px solid #d9cfa0
+}
+
+.hex.desert .bottom{
+  border-top: 30px solid #d9cfa0;
+}
+
+.hex.desert .middle{
+  background: #d9cfa0;
+}
+
+.hex.sheep .top{
+  border-bottom: 30px solid #6C6
+}
+
+.hex.sheep .bottom{
+  border-top: 30px solid #6c6;
+}
+
+.hex.sheep .middle{
+  background: #6c6;
+}
+
+.hex.clay .top{
+  border-bottom: 30px solid #7a310a
+}
+
+.hex.clay .bottom{
+  border-top: 30px solid #7a310a;
+}
+
+.hex.clay .middle{
+  background: #7a310a;
+}
+
+.hex.wheat .top{
+  border-bottom: 30px solid #f2db29;
+}
+
+.hex.wheat .bottom{
+  border-top: 30px solid #f2db29;
+}
+
+.hex.wheat .middle{
+  background: #f2db29;
+}
+
+.hex.ore .top{
+  border-bottom: 30px solid #696966;
+}
+
+.hex.ore .bottom{
+  border-top: 30px solid #696966;
+}
+
+.hex.ore .middle{
+  background: #696966;
+}
+.hex.wood .top{
+  border-bottom: 30px solid #145e30;
+}
+
+.hex.wood .bottom{
+  border-top: 30px solid #145e30;
+}
+
+.hex.wood .middle{
+  background: #145e30;
+}
+
+.hex.water .top{
+  border-bottom: 30px solid rgb(4, 91, 145);;
+}
+
+.hex.water .bottom{
+  border-top: 30px solid  rgb(4, 91, 145);;
+}
+
+.hex.water .middle{
+  background: rgb(4, 91, 145);
+  color: white;
+  font-size: medium;
+  user-select: none;
+}
+
+.port-id{
+  width: 50px;
+  left:20px;
+  left: 25px;
+  top: 35px;
+  position: absolute;
+}
+
+.hex.blank .top{
+  border-bottom: 30px solid white;
+}
+
+.hex.blank .bottom{
+  border-top: 30px solid white
+}
+
+.hex.blank .middle{
+  background: white;
+}
+
+.hex-row {
+  clear: left;
+}
+.hex-row-even {
+  clear: left;
+  margin-left: 53px;
+}
+
+.hex-row-edge {
+  clear: left;
+  margin-left: 106px;
+}
+
+.road {
+  border-radius: 3px;
+  position: absolute;
+  width: 9px;
+  height: 40px;
+  z-index: 150;
+}
+
+.road.blank {
+  background-color: transparent;
+  position: absolute;
+  border: 2px dashed black;
+}
+
+.road.blank:hover {
+  background-color: yellow;
+}
+
+
+.road.left {
+  margin-left: -58px;
+  margin-top: 38px;
+}
+
+.road.top-left {
+  transform: rotate(60deg);
+  left: 20px;
+  bottom: 86px
+}
+
+.road.top-right {
+  transform: rotate(120deg);
+  left: 77px;
+  bottom: 85px;
+}
+
+.settlement {
+  border-radius: 50%;
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  z-index: 150;
+}
+
+.settlement.blank{
+  background-color: grey;
+}
+
+.settlement.blank:hover {
+  background-color: yellow;
+}
+
+.settlement.very-top{
+  left: 48px;
+  bottom: 116px;
+}
+
+.settlement.top-left{
+  right: 100px;
+  top: 25px;
+}
+
+.number-spot {
+  height: 40px;
+  width: 40px;
+  position: absolute;
+  z-index: 150;
+  border-radius: 50%;
+  background-color: antiquewhite;
+  right: 30px;
+  top: 35px;
+  font-size: large;
+  user-select: none;
+}
+
+.port-location {
+  border-radius: 3px;
+  position: absolute;
+  width: 9px;
+  height: 40px;
+  z-index: 150;
+}
+
+.port-location.right {
+  top: 38px;
+  left: 85px;
+}
+
+.port-location.left {
+  top: 38px;
+  right: 85px;
+}
+
+.port-location.bottom-right {
+  top: 78px;
+  right: 28px;
+  transform: rotate(60deg);
+}
+
+.port-location.bottom-left {
+    transform: rotate(120deg);
+    top: 78px;
+    left: 28px;
+}
+
+.port-location.top-right {
+  transform: rotate(300deg);
+  right: 25px;
+  top: 4px;
+}
+
+.port-location.top-left {
+  transform: rotate(240deg);
+  left: 25px;
+  top: 4px;
+}
+
+.port-location {
+  background-color: transparent;
+  position: absolute;
+  border: 2px dashed black;
+}
+
+.port-location.not-selected:hover {
+  background-color: yellow;
+}
+
+.port-location.selected {
+  background-color: black;
+}
+
+
+
