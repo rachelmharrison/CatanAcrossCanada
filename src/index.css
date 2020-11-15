@@ -163,6 +163,30 @@ code {
   z-index: 150;
 }
 
+.road.red {
+  background-color: red;
+}
+
+.road.green {
+  background-color: green;
+}
+
+.road.blue {
+  background-color: blue;
+}
+
+.road.white {
+  background-color: white;
+}
+
+.road.orange {
+  background-color: darkorange;
+}
+
+.road.brown {
+  background-color: brown;
+}
+
 .road.blank {
   background-color: transparent;
   position: absolute;

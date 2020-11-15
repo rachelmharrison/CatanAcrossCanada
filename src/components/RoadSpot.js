@@ -6,17 +6,31 @@ export default class RoadSpot extends React.Component {
 
 state = {   
  colour: "blank",
- orientation: null
+ orientation: null,
+ type: "settlement",
+ colourIndex: 0
 };
 
-classname = "road" + " " + this.props.orientation + " " + this.state.colour
+colours = ['blank', 'red', 'orange', 'white', 'blue', 'green', 'brown']
+
+
+handleClick = () => {
+  let newIndex = (this.state.colourIndex + 1) % 7;
+  console.log(newIndex)
+  this.setState({ colour: this.colours[newIndex]});
+  this.setState({ colourIndex: newIndex });
+  console.log('click')
+}
 
 render() {
+  let classname = "road" + " " + this.props.orientation + " " + this.state.colour
+
+  console.log(classname)
+
   return (
-    <span className={this.classname}>
+    <span className={classname} onClick={this.handleClick}>
        
     </span>
-
   ) 
 }
 
