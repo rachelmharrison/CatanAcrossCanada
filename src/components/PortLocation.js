@@ -23,7 +23,8 @@ handleClick = e => {
 }
 
 render() {
- let classname = "port-location" + " " + this.state.orientation + " " + this.state.selected
+ let classname = "port-location" + " " + this.state.orientation + " " + this.state.selected;
+ classname += this.props.settingUp ? " setting-up" : ''
 
   return (
     <span className={classname} onClick={this.handleClick}>

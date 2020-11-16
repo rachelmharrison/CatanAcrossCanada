@@ -159,7 +159,7 @@ code {
   border-radius: 3px;
   position: absolute;
   width: 9px;
-  height: 40px;
+  height: 30px;
   z-index: 150;
 }
 
@@ -172,7 +172,7 @@ code {
 }
 
 .road.blue {
-  background-color: blue;
+  background-color: lightskyblue;
 }
 
 .road.white {
@@ -200,26 +200,26 @@ code {
 
 .road.left {
   margin-left: -58px;
-  margin-top: 38px;
+  margin-top: 46px;
 }
 
 .road.top-left {
   transform: rotate(60deg);
-  left: 20px;
-  bottom: 86px
+  left: 22px;
+  bottom: 92px;
 }
 
 .road.top-right {
   transform: rotate(120deg);
-  left: 77px;
-  bottom: 85px;
+  left: 76px;
+  bottom: 90px;
 }
 
 .settlement {
   border-radius: 50%;
   position: absolute;
-  width: 10px;
-  height: 10px;
+  width: 20px;
+  height: 20px;
   z-index: 150;
 }
 
@@ -231,14 +231,38 @@ code {
   background-color: yellow;
 }
 
+.settlement.red {
+  background-color: red;
+}
+
+.settlement.green {
+  background-color: green;
+}
+
+.settlement.blue {
+  background-color: lightskyblue;
+}
+
+.settlement.white {
+  background-color: white;
+}
+
+.settlement.orange {
+  background-color: darkorange;
+}
+
+.settlement.brown {
+  background-color: brown;
+}
+
 .settlement.very-top{
-  left: 48px;
-  bottom: 116px;
+  left: 43px;
+  bottom: 110px;
 }
 
 .settlement.top-left{
-  right: 100px;
-  top: 25px;
+  right: 95px;
+  top: 17px;
 }
 
 .number-spot {
@@ -258,45 +282,45 @@ code {
   border-radius: 3px;
   position: absolute;
   width: 9px;
-  height: 40px;
+  height: 30px;
   z-index: 150;
 }
 
 .port-location.right {
-  top: 38px;
+  top: 46px;
   left: 85px;
 }
 
 .port-location.left {
-  top: 38px;
+  top: 46px;
   right: 85px;
 }
 
 .port-location.bottom-right {
-  top: 78px;
-  right: 28px;
+  top: 80px;
+  right: 32px;
   transform: rotate(60deg);
 }
 
 .port-location.bottom-left {
     transform: rotate(120deg);
-    top: 78px;
-    left: 28px;
+    top: 80px;
+    left: 32px;
 }
 
 .port-location.top-right {
   transform: rotate(300deg);
-  right: 25px;
-  top: 4px;
+  right: 32px;
+  top: 10px;
 }
 
 .port-location.top-left {
   transform: rotate(240deg);
-  left: 25px;
-  top: 4px;
+  left: 32px;
+  top: 10px;
 }
 
-.port-location {
+.port-location.setting-up {
   background-color: transparent;
   position: absolute;
   border: 2px dashed black;

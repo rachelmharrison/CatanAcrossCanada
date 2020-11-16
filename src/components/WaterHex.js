@@ -74,23 +74,23 @@ render() {
         {this.props.settlements && this.props.settlements.includes("top-left") && !this.props.settingUp &&
           <SettlementSpot orientation={"top-left"}/>
         }
-        {this.props.portLocations && this.props.portLocations.includes("right") && this.props.settingUp &&
-          <PortLocation orientation={"right"}/>
+        {this.props.portLocations && this.props.portLocations.includes("right") &&
+          <PortLocation settingUp={this.props.settingUp} orientation={"right"}/>
         }
-        {this.props.portLocations && this.props.portLocations.includes("left") && this.props.settingUp &&
-          <PortLocation orientation={"left"}/>
+        {this.props.portLocations && this.props.portLocations.includes("left") &&
+          <PortLocation settingUp={this.props.settingUp} orientation={"left"}/>
         }
-        {this.props.portLocations && this.props.portLocations.includes("bottom-right") && this.props.settingUp &&
-          <PortLocation orientation={"bottom-right"}/>
+        {this.props.portLocations && this.props.portLocations.includes("bottom-right") &&
+          <PortLocation settingUp={this.props.settingUp} orientation={"bottom-right"}/>
         }
-        {this.props.portLocations && this.props.portLocations.includes("bottom-left") && this.props.settingUp &&
-          <PortLocation orientation={"bottom-left"}/>
+        {this.props.portLocations && this.props.portLocations.includes("bottom-left") &&
+          <PortLocation settingUp={this.props.settingUp} orientation={"bottom-left"}/>
         }
-        {this.props.portLocations && this.props.portLocations.includes("top-right") && this.props.settingUp &&
-          <PortLocation orientation={"top-right"}/>
+        {this.props.portLocations && this.props.portLocations.includes("top-right") &&
+          <PortLocation settingUp={this.props.settingUp} orientation={"top-right"}/>
         }
-        {this.props.portLocations && this.props.portLocations.includes("top-left") && this.props.settingUp &&
-          <PortLocation orientation={"top-left"}/>
+        {this.props.portLocations && this.props.portLocations.includes("top-left") &&
+          <PortLocation settingUp={this.props.settingUp} orientation={"top-left"}/>
         }
         <div className={"top"} />
         <div className={"middle"}>

@@ -7,7 +7,6 @@ export default class RoadSpot extends React.Component {
 state = {   
  colour: "blank",
  orientation: null,
- type: "settlement",
  colourIndex: 0
 };
 
@@ -19,7 +18,6 @@ handleClick = () => {
   console.log(newIndex)
   this.setState({ colour: this.colours[newIndex]});
   this.setState({ colourIndex: newIndex });
-  console.log('click')
 }
 
 render() {
