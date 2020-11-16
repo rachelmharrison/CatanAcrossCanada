@@ -12,6 +12,22 @@ code {
     monospace;
 }
 
+.number {
+  margin: 0;
+}
+
+.number.red {
+  color: #7a310a;
+}
+
+.dots {
+  line-height: 2px;
+}
+
+.dots.red {
+  color: #7a310a
+}
+
 .hex {
   float: left;
   margin-left: 3px;
@@ -218,9 +234,12 @@ code {
 .settlement {
   border-radius: 50%;
   position: absolute;
-  width: 20px;
-  height: 20px;
+  width: 25px;
+  height: 25px;
   z-index: 150;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .settlement.blank{
@@ -256,13 +275,13 @@ code {
 }
 
 .settlement.very-top{
-  left: 43px;
-  bottom: 110px;
+  left: 41px;
+  bottom: 109px;
 }
 
 .settlement.top-left{
-  right: 95px;
-  top: 17px;
+  right: 92px;
+  top: 18px;
 }
 
 .number-spot {
